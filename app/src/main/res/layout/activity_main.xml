@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_weight="1"
+        android:background="#F48FB1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtTriesLeft"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:text=" X X X X X"
+            android:textAlignment="center"
+            android:textSize="@dimen/txtTriesLeft"
+            android:textStyle="bold" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#CE93D8"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtWordToBeGuessed"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:text="My Word"
+            android:textAlignment="center"
+            android:textSize="@dimen/txtWordToBeGuessed" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#B39DDB"
+        android:gravity="center">
+
+        <EditText
+            android:importantForAutofill="no"
+            android:maxLength="1"
+            android:gravity="center"
+            android:id="@+id/edtInput"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:width="30dp"
+            android:hint="Input One Letter"
+            android:textAlignment="center"
+            android:textSize="@dimen/edtInput" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#9FA8DA"
+        android:baselineAligned="false"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtLettersTried"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:text="Letters Tried:"
+            android:textAlignment="center"
+            android:textSize="@dimen/txtLettersTried" />
+    </TableRow>
+
+
+    <TableRow
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:background="#B39DDB"
+            android:backgroundTint="#EF9A9A"
+            android:shadowColor="#EDE7F6"
+            android:text="Reset"
+            android:textSize="@dimen/btnReset" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="#0079D6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:backgroundTint="#03A9F4"
+            android:text="Rules:"
+            android:padding="10sp"
+            android:textColor="#F4EBEB"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="#0079D6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:background="#90CAF9"
+            android:backgroundTint="#B003A9F4"
+            android:padding="10sp"
+            android:text="1. Enter a letter.
+\n2. If it is part of the word, you're close to winning.
+\n3. If it is not part of the word, uh-oh you lose an X and you can see the number of chances you have left."
+            android:textColor="#F4EBEB"
+            android:textSize="@dimen/txtTitle" />
+    </TableRow>
+
+
+
+</TableLayout>
